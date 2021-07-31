@@ -1,0 +1,80 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-details{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-details h4{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin-bottom: 0;
+}
+
+.book-details h4 span{
+    color: rgba(235, 154, 5);
+    font-weight: 900;
+    text-shadow: 0.15rem 0.15rem rgba(235, 154, 5, 0.4);
+}
+
+.book-details p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.buy-or-die{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+tr{
+    display: block;
+    float: left;
+    padding: 0.5rem;
+}
+
+th, td{
+    display: block;
+    text-align: left;
+    padding: 0.3rem;
+}
+
+.buy-or-die .buy-button{
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.2rem;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    background: rgba(235, 154, 5);
+    box-shadow: 0.2rem 0.2rem 0.1rem rgba(235, 154, 5, 0.4);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.buy-or-die .buy-button:active{
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+.all-books-redirect{
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.2rem;
+    border: 0.2rem solid rgba(235, 154, 5);
+}

@@ -1,0 +1,40 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.book-list{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-table{
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+}
+
+.book-table th,
+.book-table td{
+    padding: 0.5rem;
+}
+
+.book-table tr:nth-child(odd){
+    background: rgba(235, 154, 5, 0.4);
+}
+
+.book-table tr:first-child{
+    background: black;
+    background: rgb(219, 146, 10);
+    color: white;
+}

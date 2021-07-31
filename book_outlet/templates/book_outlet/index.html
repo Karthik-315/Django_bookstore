@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'book_outlet/css/index.css' %}">
+{% endblock %}
+
+{% block body %}
+    <section class="main-container">
+        <article class="title">
+            <h3>Available Books - {{totalBooks}}</h3>
+        </article>
+
+        <article class="book-list">
+            <table class="book-table">
+                <tr class="table-row header-row">
+                    <th class="first-col">S.No.</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Price (INR)</th>
+                    <th>Rating (Avg. {{averageRating}})</th>
+                </tr>
+
+                {% for currentBook in allBooks %}
+                    <tr class="table-row">
+                        <td class="first-col">{{currentBook.id}}</td>
+                        <td><a href="{{currentBook.get_absolute_url}}">{{currentBook.bookName}}</a></td>
+                        <td>{{currentBook.author}}</td>
+                        <td>{{currentBook.price}}</td>
+                        <td>{{currentBook.rating}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </article>
+    </section>
+{% endblock %}
